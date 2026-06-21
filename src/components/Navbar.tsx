@@ -75,10 +75,8 @@ export default function Navbar() {
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle />
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger>
-                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10" aria-label="Open menu">
-                  <Menu className="w-6 h-6" />
-                </Button>
+              <SheetTrigger className="text-white hover:bg-white/10 rounded-md p-2" aria-label="Open menu">
+                <Menu className="w-6 h-6" />
               </SheetTrigger>
               <SheetContent side="right" className="bg-[#0a1f14] border-white/10 w-[280px]">
                 <SheetHeader>

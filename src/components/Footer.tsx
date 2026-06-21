@@ -21,7 +21,7 @@ export default function Footer() {
         <Link href="/contact" className="hover:text-[#7ab890] transition-colors">Contact</Link>
       </div>
 
-      <p>Contact: {COMPANY.contactName} &nbsp;|&nbsp; {COMPANY.phone} &nbsp;|&nbsp; Southeast Queensland, Australia</p>
+      <p>Contact: {COMPANY.contactName} &nbsp;|&nbsp; <a href={`tel:${COMPANY.phone}`} className="hover:text-[#7ab890] transition-colors">{COMPANY.phone}</a> &nbsp;|&nbsp; Southeast Queensland, Australia</p>
       <p className="mt-2">&copy; {new Date().getFullYear()} Brisbane Grease Traps. All rights reserved. Licensed &amp; insured.</p>
     </footer>
   );

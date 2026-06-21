@@ -41,7 +41,7 @@ export default function ContactForm() {
       <div className="text-center py-8">
         <CheckCircle className="w-12 h-12 text-[#2e8b57] mx-auto mb-4" />
         <h3 className="text-lg font-semibold text-foreground mb-2">Opening your email app…</h3>
-        <p className="text-muted-foreground text-sm">Or call Cameron directly on 0459 410 785.</p>
+        <p className="text-muted-foreground text-sm">Or call Cameron directly on <a href="tel:0459410785" className="text-[#2e8b57] hover:underline font-semibold">0459 410 785</a>.</p>
         <button onClick={() => setSubmitted(false)} className="mt-5 text-[#2e8b57] text-sm hover:underline">
           Send another enquiry
         </button>

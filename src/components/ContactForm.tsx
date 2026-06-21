@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useState } from "react";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Loader2 } from "lucide-react";
 
 const schema = z.object({
   firstName: z.string().min(2, "Required"),
@@ -21,27 +21,47 @@ const inputCls = "w-full bg-card border border-border rounded-[9px] px-[13px] py
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => {
-    const subject = encodeURIComponent(`Enquiry — ${data.serviceType} — ${data.businessName}`);
-    const body = encodeURIComponent(
-      `Name: ${data.firstName} ${data.lastName}\nBusiness: ${data.businessName}\nPhone: ${data.phone}\nService: ${data.serviceType}\n\n${data.message ?? ""}`
-    );
-    window.location.href = `mailto:Admin@BrisbaneGreaseTraps.com.au?subject=${subject}&body=${body}`;
-    setSubmitted(true);
-    reset();
+  const onSubmit = async (data: FormData) => {
+    setError("");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "8aa97eee-37c2-4f4d-85d0-020479121189",
+          subject: `Enquiry — ${data.serviceType} — ${data.businessName}`,
+          name: `${data.firstName} ${data.lastName}`,
+          phone: data.phone,
+          business: data.businessName,
+          service: data.serviceType,
+          message: data.message ?? "",
+          from_name: "Brisbane Grease Traps Website",
+        }),
+      });
+      const json = await res.json();
+      if (!json.success) throw new Error();
+      setSubmitted(true);
+      reset();
+    } catch {
+      setError("Something went wrong. Please call Cameron directly on 0459 410 785.");
+    }
   };
 
   if (submitted) {
     return (
       <div className="text-center py-8">
         <CheckCircle className="w-12 h-12 text-[#2e8b57] mx-auto mb-4" />
-        <h3 className="text-lg font-semibold text-foreground mb-2">Opening your email app…</h3>
-        <p className="text-muted-foreground text-sm">Or call Cameron directly on <a href="tel:0459410785" className="text-[#2e8b57] hover:underline font-semibold">0459 410 785</a>.</p>
+        <h3 className="text-lg font-semibold text-foreground mb-2">Enquiry sent!</h3>
+        <p className="text-muted-foreground text-sm">
+          Cameron will be in touch shortly. Or call{" "}
+          <a href="tel:0459410785" className="text-[#2e8b57] hover:underline font-semibold">0459 410 785</a>.
+        </p>
         <button onClick={() => setSubmitted(false)} className="mt-5 text-[#2e8b57] text-sm hover:underline">
           Send another enquiry
         </button>
@@ -106,11 +126,22 @@ export default function ContactForm() {
         />
       </div>
 
+      {error && (
+        <p className="text-sm text-red-500 bg-red-50 border border-red-200 rounded-[9px] px-4 py-3">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="w-full bg-[#2e8b57] hover:bg-[#3dab6e] text-white font-semibold text-[15px] py-[14px] rounded-[10px] transition-colors flex items-center justify-center gap-2 mt-2"
+        disabled={isSubmitting}
+        className="w-full bg-[#2e8b57] hover:bg-[#3dab6e] disabled:opacity-60 text-white font-semibold text-[15px] py-[14px] rounded-[10px] transition-colors flex items-center justify-center gap-2 mt-2"
       >
-        Send enquiry — 0459 410 785
+        {isSubmitting ? (
+          <><Loader2 className="w-4 h-4 animate-spin" /> Sending…</>
+        ) : (
+          "Send enquiry — 0459 410 785"
+        )}
       </button>
     </form>
   );

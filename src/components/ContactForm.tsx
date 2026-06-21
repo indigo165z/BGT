@@ -31,7 +31,7 @@ export default function ContactForm() {
     const body = encodeURIComponent(
       `Name: ${data.firstName} ${data.lastName}\nBusiness: ${data.businessName}\nPhone: ${data.phone}\nService: ${data.serviceType}\n\n${data.message ?? ""}`
     );
-    window.location.href = `mailto:info@brisbanegreastraps.com.au?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Admin@BrisbaneGreaseTraps.com.au?subject=${subject}&body=${body}`;
     setSubmitted(true);
     reset();
   };

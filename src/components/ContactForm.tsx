@@ -10,6 +10,7 @@ const schema = z.object({
   firstName: z.string().min(2, "Required"),
   lastName: z.string().min(1, "Required"),
   businessName: z.string().min(2, "Required"),
+  email: z.string().email("Enter a valid email address"),
   phone: z.string().min(8, "Enter a valid phone number").regex(/^[\d\s\-+()]+$/, "Invalid number"),
   serviceType: z.string().min(1, "Please select a service"),
   message: z.string().optional(),
@@ -37,6 +38,7 @@ export default function ContactForm() {
           access_key: "8aa97eee-37c2-4f4d-85d0-020479121189",
           subject: `Enquiry — ${data.serviceType} — ${data.businessName}`,
           name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
           phone: data.phone,
           business: data.businessName,
           service: data.serviceType,
@@ -82,6 +84,12 @@ export default function ContactForm() {
           <input type="text" placeholder="Smith" {...register("lastName")} className={inputCls} />
           {errors.lastName && <p className="mt-1 text-xs text-red-500">{errors.lastName.message}</p>}
         </div>
+      </div>
+
+      <div>
+        <label className="block text-[13px] font-semibold text-muted-foreground mb-[5px]">Email address</label>
+        <input type="email" placeholder="jane@example.com" {...register("email")} className={inputCls} />
+        {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
       </div>
 
       <div>

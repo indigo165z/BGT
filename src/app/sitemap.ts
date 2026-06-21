@@ -1,4 +1,6 @@
 import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 import { services } from "@/lib/services";
 
 const BASE_URL = "https://brisbanegreastraps.com.au";

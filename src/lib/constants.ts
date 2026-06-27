@@ -1,7 +1,7 @@
 export const COMPANY = {
   name: "Brisbane Grease Traps",
   phone: "0459 410 785",
-  contactName: "Cameron Melville",
+  contactName: "Our team",
   email: "info@brisbanegreastraps.com.au",
   abn: "00 000 000 000",
   address: "Brisbane, Queensland, Australia",

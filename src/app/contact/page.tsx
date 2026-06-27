@@ -5,9 +5,9 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact — Talk to Cameron Directly",
+  title: "Contact — Get In Touch Directly",
   description:
-    "For bookings, quotes, or emergency service, reach out to Cameron Melville — the owner and operator of Brisbane Grease Traps. Call 0459 410 785.",
+    "For bookings, quotes, or emergency service, reach out to the team at Brisbane Grease Traps. Call 0459 410 785.",
   alternates: { canonical: "https://brisbanegreastraps.com.au/contact" },
 };
 
@@ -19,10 +19,10 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto pt-8 text-center">
           <p className="text-[12px] font-bold tracking-[0.12em] uppercase text-[#7ab890] mb-3">Get in touch</p>
           <h1 className="font-serif text-[46px] sm:text-[52px] text-white leading-[1.1] mb-5">
-            Talk to Cameron directly
+            Get in touch directly
           </h1>
           <p className="text-[#a0bcac] text-lg leading-[1.75] max-w-xl mx-auto">
-            For bookings, quotes, or emergency service, reach out to Cameron Melville — the owner and operator of Brisbane Grease Traps.
+            For bookings, quotes, or emergency service, reach out to the team at Brisbane Grease Traps.
           </p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function ContactPage() {
                   <a href={`tel:${COMPANY.phone}`} className="text-[17px] font-semibold text-foreground hover:text-[#2e8b57] transition-colors block">
                     {COMPANY.phone}
                   </a>
-                  <p className="text-[13px] text-muted-foreground">{COMPANY.contactName} — available 24hrs for emergencies</p>
+                  <p className="text-[13px] text-muted-foreground">Available 24hrs for emergencies</p>
                 </div>
               </div>
 
@@ -76,7 +76,7 @@ export default function ContactPage() {
               <div>
                 <strong className="text-white text-[15px] font-semibold block mb-1">Grease trap emergency?</strong>
                 <span className="text-[#7ab890] text-[13px]">
-                  Call Cameron now on{" "}
+                  Call now on{" "}
                   <a href={`tel:${COMPANY.phone}`} className="text-white font-semibold hover:text-[#3dab6e] transition-colors">
                     {COMPANY.phone}
                   </a>{" "}

@@ -27,7 +27,7 @@ export default function AboutPage() {
             className="inline-flex items-center gap-2 bg-[#2e8b57] hover:bg-[#3dab6e] text-white font-semibold px-7 py-[13px] rounded-[10px] transition-colors"
           >
             <Phone className="w-4 h-4" />
-            Call Cameron — {COMPANY.phone}
+            Call now — {COMPANY.phone}
           </a>
         </div>
       </section>

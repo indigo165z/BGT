@@ -82,7 +82,7 @@ export const services: Service[] = [
     price: "Included with service",
     metaTitle: "Grease Trap Compliance Reports Brisbane | Brisbane Grease Traps",
     metaDescription:
-      "Grease trap compliance reports and documentation for Brisbane food businesses. Meet Queensland Health and BCC requirements. Call Cameron on 0459 410 785.",
+      "Grease trap compliance reports and documentation for Brisbane food businesses. Meet Queensland Health and BCC requirements. Call 0459 410 785.",
   },
   {
     slug: "installation",
@@ -160,7 +160,7 @@ export const services: Service[] = [
     price: "From $250",
     metaTitle: "Wash-Down Bays & Oil Separators Brisbane | Brisbane Grease Traps",
     metaDescription:
-      "Wash-down bay and oil separator servicing and installation for Brisbane industrial and commercial sites. Call Cameron on 0459 410 785.",
+      "Wash-down bay and oil separator servicing and installation for Brisbane industrial and commercial sites. Call 0459 410 785.",
   },
   {
     slug: "maintenance",

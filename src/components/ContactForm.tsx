@@ -51,7 +51,7 @@ export default function ContactForm() {
       setSubmitted(true);
       reset();
     } catch {
-      setError("Something went wrong. Please call Cameron directly on 0459 410 785.");
+      setError("Something went wrong. Please call us directly on 0459 410 785.");
     }
   };
 
@@ -61,7 +61,7 @@ export default function ContactForm() {
         <CheckCircle className="w-12 h-12 text-[#2e8b57] mx-auto mb-4" />
         <h3 className="text-lg font-semibold text-foreground mb-2">Enquiry sent!</h3>
         <p className="text-muted-foreground text-sm">
-          Cameron will be in touch shortly. Or call{" "}
+          Our team will be in touch shortly. Or call{" "}
           <a href="tel:0459410785" className="text-[#2e8b57] hover:underline font-semibold">0459 410 785</a>.
         </p>
         <button onClick={() => setSubmitted(false)} className="mt-5 text-[#2e8b57] text-sm hover:underline">

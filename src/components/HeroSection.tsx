@@ -60,16 +60,16 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.32 }}
           className="grid grid-cols-2 gap-[14px]"
         >
-          {/* Cameron card — spans full width */}
+          {/* Direct contact card — spans full width */}
           <div className="col-span-2 bg-[#2e8b57]/13 border border-[#2e8b57]/28 rounded-[14px] p-5 flex items-center gap-4">
-            <div className="w-[52px] h-[52px] bg-[#2e8b57]/28 rounded-[11px] flex items-center justify-center flex-shrink-0 text-white font-bold font-serif text-lg">
-              CM
+            <div className="w-[52px] h-[52px] bg-[#2e8b57]/28 rounded-[11px] flex items-center justify-center flex-shrink-0">
+              <Phone className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="font-serif text-[28px] text-white leading-none mb-1">Cameron Melville</div>
-              <div className="text-[#7ab890] text-[13px] font-semibold mb-1">Owner &amp; operator</div>
+              <div className="font-serif text-[28px] text-white leading-none mb-1">Direct contact</div>
+              <div className="text-[#7ab890] text-[13px] font-semibold mb-1">Every time</div>
               <div className="text-[#a0bcac] text-[13px] leading-snug">
-                <strong className="text-white font-semibold">Direct contact, every time.</strong> When you call, you speak to the person doing the work — no call centres, no run-around.
+                <strong className="text-white font-semibold">No call centres, no run-around.</strong> When you call, you speak to the team doing the work.
               </div>
             </div>
           </div>

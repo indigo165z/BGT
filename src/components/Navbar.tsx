@@ -67,7 +67,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 bg-[#2e8b57] hover:bg-[#3dab6e] text-white text-sm font-semibold px-[22px] py-[10px] rounded-[9px] transition-colors"
             >
               <Phone className="w-4 h-4" />
-              Call Cameron
+              Call now
             </a>
           </div>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
                     className="flex items-center justify-center gap-2 w-full bg-[#2e8b57] hover:bg-[#3dab6e] text-white font-semibold py-3 rounded-[9px] transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    Call Cameron — {COMPANY.phone}
+                    Call now — {COMPANY.phone}
                   </a>
                 </div>
               </SheetContent>

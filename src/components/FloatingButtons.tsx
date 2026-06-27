@@ -24,7 +24,7 @@ export default function FloatingButtons() {
         className="fixed bottom-6 left-6 z-50 md:hidden flex items-center gap-2 bg-[#2e8b57] hover:bg-[#3dab6e] text-white px-4 py-3 rounded-full shadow-lg font-semibold text-sm transition-transform hover:scale-105"
       >
         <Phone className="w-5 h-5" />
-        Call Cameron
+        Call now
       </a>
     </>
   );

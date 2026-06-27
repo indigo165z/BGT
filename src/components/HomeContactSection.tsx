@@ -14,10 +14,10 @@ export default function HomeContactSection() {
             Get in touch
           </p>
           <h2 className="font-serif text-[38px] text-foreground leading-[1.15] mb-4">
-            Talk to Cameron directly
+            Get in touch directly
           </h2>
           <p className="text-muted-foreground text-[16px] leading-[1.75] max-w-[480px]">
-            For bookings, quotes, or emergency service, reach out to Cameron Melville — the owner and operator of Brisbane Grease Traps.
+            For bookings, quotes, or emergency service, reach out to the team at Brisbane Grease Traps.
           </p>
 
           <div className="mt-8 flex flex-col gap-4">
@@ -34,7 +34,7 @@ export default function HomeContactSection() {
                   {COMPANY.phone}
                 </a>
                 <span className="text-[13px] text-muted-foreground">
-                  {COMPANY.contactName} — available 24hrs for emergencies
+                  Available 24hrs for emergencies
                 </span>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function HomeContactSection() {
                 Grease trap emergency?
               </strong>
               <span className="text-[13px] text-[#7ab890]">
-                Call Cameron now on{" "}
+                Call now on{" "}
                 <a
                   href={`tel:${COMPANY.phone}`}
                   className="text-white font-semibold hover:text-[#3dab6e] transition-colors"

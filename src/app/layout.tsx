@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Brisbane Grease Traps",
   },
   description:
-    "Professional grease trap cleaning, installation, maintenance, and compliance certification for Brisbane restaurants and commercial kitchens. Call Cameron on 0459 410 785.",
+    "Professional grease trap cleaning, installation, maintenance, and compliance certification for Brisbane restaurants and commercial kitchens. Call 0459 410 785.",
   keywords: [
     "grease trap cleaning Brisbane",
     "grease trap service Brisbane",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: COMPANY.name,
     title: "Grease Trap Cleaning Brisbane | Brisbane Grease Traps",
     description:
-      "Professional grease trap services for Brisbane businesses. Call Cameron on 0459 410 785.",
+      "Professional grease trap services for Brisbane businesses. Call 0459 410 785.",
   },
   twitter: {
     card: "summary_large_image",

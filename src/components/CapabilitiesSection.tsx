@@ -38,7 +38,6 @@ const panels: Record<string, PanelCard[]> = {
       items: [
         "Detailed reports to meet council and trade waste obligations",
         "Compliance checks and documentation",
-        "Advice on meeting local council and Queensland environmental standards",
       ],
     },
     {

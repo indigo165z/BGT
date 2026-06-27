@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, MapPin, AlertCircle } from "lucide-react";
+import { Phone, Mail, MapPin, AlertCircle } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { COMPANY } from "@/lib/constants";
@@ -44,6 +44,18 @@ export default function ContactPage() {
                     {COMPANY.phone}
                   </a>
                   <p className="text-[13px] text-muted-foreground">{COMPANY.contactName} — available 24hrs for emergencies</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 bg-[#e8f5ee] dark:bg-[#2e8b57]/20 rounded-[10px] flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-[#2e8b57]" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium mb-0.5">Email</p>
+                  <a href="mailto:Admin@BrisbaneGreaseTraps.com.au" className="text-[17px] font-semibold text-foreground hover:text-[#2e8b57] transition-colors block">
+                    Admin@BrisbaneGreaseTraps.com.au
+                  </a>
                 </div>
               </div>
 

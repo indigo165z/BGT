@@ -1,4 +1,4 @@
-import { Phone, MapPin, AlertCircle } from "lucide-react";
+import { Phone, Mail, MapPin, AlertCircle } from "lucide-react";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ContactForm from "@/components/ContactForm";
 import { COMPANY } from "@/lib/constants";
@@ -37,6 +37,19 @@ export default function HomeContactSection() {
                   {COMPANY.contactName} — available 24hrs for emergencies
                 </span>
               </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex items-center gap-[13px]">
+              <div className="w-10 h-10 bg-[#e8f5ee] rounded-[10px] flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-[#2e8b57]" />
+              </div>
+              <a
+                href="mailto:Admin@BrisbaneGreaseTraps.com.au"
+                className="text-[15px] text-foreground hover:text-[#2e8b57] transition-colors"
+              >
+                Admin@BrisbaneGreaseTraps.com.au
+              </a>
             </div>
 
             {/* Location */}

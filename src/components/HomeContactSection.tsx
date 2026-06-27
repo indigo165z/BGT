@@ -45,10 +45,10 @@ export default function HomeContactSection() {
                 <Mail className="w-5 h-5 text-[#2e8b57]" />
               </div>
               <a
-                href="mailto:Admin@BrisbaneGreaseTraps.com.au"
+                href="mailto:Admin@BrisbaneGreaseTraps.com"
                 className="text-[15px] text-foreground hover:text-[#2e8b57] transition-colors"
               >
-                Admin@BrisbaneGreaseTraps.com.au
+                Admin@BrisbaneGreaseTraps.com
               </a>
             </div>
 

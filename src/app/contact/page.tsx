@@ -53,8 +53,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium mb-0.5">Email</p>
-                  <a href="mailto:Admin@BrisbaneGreaseTraps.com.au" className="text-[17px] font-semibold text-foreground hover:text-[#2e8b57] transition-colors block">
-                    Admin@BrisbaneGreaseTraps.com.au
+                  <a href="mailto:Admin@BrisbaneGreaseTraps.com" className="text-[17px] font-semibold text-foreground hover:text-[#2e8b57] transition-colors block">
+                    Admin@BrisbaneGreaseTraps.com
                   </a>
                 </div>
               </div>

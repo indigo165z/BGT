@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "grease trap cleaning Brisbane",
     "grease trap service Brisbane",
     "commercial kitchen grease trap",
-    "grease trap pump out Brisbane",
     "grease trap installation Brisbane",
     "grease trap compliance Brisbane",
     "wash down bay Brisbane",

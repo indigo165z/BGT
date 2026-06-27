@@ -109,7 +109,7 @@ export default function ContactForm() {
         <select {...register("serviceType")} className={inputCls}>
           <option value="">Select a service…</option>
           <optgroup label="Grease Traps">
-            <option value="Grease trap cleaning / pump-out">Grease trap cleaning / pump-out</option>
+            <option value="Grease trap cleaning">Grease trap cleaning</option>
             <option value="Grease trap installation">Grease trap installation</option>
             <option value="Compliance report">Compliance report</option>
             <option value="Emergency call-out">Emergency call-out</option>

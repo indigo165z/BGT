@@ -19,12 +19,12 @@ export const services: Service[] = [
     title: "Grease Trap Servicing",
     shortTitle: "Servicing",
     description:
-      "Scheduled cleaning, pump-outs, emergency call-outs, and high-pressure water cleaning to keep your kitchen compliant and running smoothly.",
+      "Scheduled cleaning, emergency call-outs, and high-pressure water cleaning to keep your kitchen compliant and running smoothly.",
     longDescription:
-      "Our expert technicians provide thorough grease trap servicing using industrial-grade vacuum trucks and high-pressure jetting equipment. We handle everything from scheduled pump-outs and preventative maintenance plans to emergency call-outs for urgent blockages or overflows. All waste is removed and disposed of in full compliance with Queensland environmental regulations. We work within your schedule with minimal disturbance to trading.",
+      "Our expert technicians provide thorough grease trap servicing using industrial-grade vacuum trucks and high-pressure jetting equipment. We handle everything from scheduled cleaning and preventative maintenance plans to emergency call-outs for urgent blockages or overflows. All waste is removed and disposed of in full compliance with Queensland environmental regulations. We work within your schedule with minimal disturbance to trading.",
     icon: "Droplets",
     features: [
-      "Scheduled grease trap cleaning and pump-outs",
+      "Scheduled grease trap cleaning",
       "Emergency call-outs for urgent blockages or overflows",
       "High-pressure water cleaning",
       "Waste removal and environmentally compliant disposal",
@@ -41,14 +41,14 @@ export const services: Service[] = [
     process: [
       "Book your service online, by phone, or request a maintenance plan",
       "Our technician arrives in a fully equipped service vehicle at the agreed time",
-      "Complete pump-out, high-pressure jet clean, and inspection performed on-site",
+      "Complete high-pressure jet clean and inspection performed on-site",
       "Waste hauled away and disposed of at a licenced facility",
       "Detailed service report issued for your compliance records",
     ],
     price: "From $180",
     metaTitle: "Grease Trap Cleaning & Servicing Brisbane | Brisbane Grease Traps",
     metaDescription:
-      "Professional grease trap cleaning, pump-outs, and emergency servicing across Brisbane. Licensed, insured, and compliant with Queensland regulations. Call 0459 410 785.",
+      "Professional grease trap cleaning and emergency servicing across Brisbane. Licensed, insured, and compliant with Queensland regulations. Call 0459 410 785.",
   },
   {
     slug: "compliance",

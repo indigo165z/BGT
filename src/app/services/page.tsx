@@ -19,7 +19,7 @@ export default function ServicesPage() {
             Complete grease trap solutions
           </h1>
           <p className="text-[#a0bcac] text-lg leading-[1.75] max-w-xl mx-auto">
-            From a single pump-out to a fully managed programme — all services, all in one place.
+            From a single service to a fully managed programme — all services, all in one place.
           </p>
         </div>
       </section>

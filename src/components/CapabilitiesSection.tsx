@@ -36,7 +36,7 @@ const panels: Record<string, PanelCard[]> = {
       Icon: ClipboardCheck,
       title: "Compliance reports",
       items: [
-        "Detailed service reports for council and trade waste requirements",
+        "Detailed reports to meet council and trade waste obligations",
         "Compliance checks and documentation",
         "Advice on meeting local council and Queensland environmental standards",
       ],

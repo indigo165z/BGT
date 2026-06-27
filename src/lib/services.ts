@@ -60,7 +60,7 @@ export const services: Service[] = [
       "Brisbane City Council and Queensland Health require commercial kitchens to maintain grease traps in serviceable condition and keep thorough records. Our compliance service produces detailed reports for every service visit, provides compliance checks and documentation, and offers clear advice on meeting local council and Queensland environmental standards. We make the paperwork straightforward so you can focus on running your business.",
     icon: "BadgeCheck",
     features: [
-      "Detailed service reports for council and trade waste requirements",
+      "Detailed reports to meet council and trade waste obligations",
       "Compliance checks and documentation",
       "Advice on meeting local council and Queensland environmental standards",
       "24-hour turnaround on all compliance reports",

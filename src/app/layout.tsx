@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: COMPANY.name,
     title: "Grease Trap Cleaning Brisbane | Brisbane Grease Traps",
     description:
-      "Professional grease trap services for Brisbane businesses. Licensed & insured. Call Cameron on 0459 410 785.",
+      "Professional grease trap services for Brisbane businesses. Call Cameron on 0459 410 785.",
   },
   twitter: {
     card: "summary_large_image",

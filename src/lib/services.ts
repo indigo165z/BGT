@@ -62,6 +62,7 @@ export const services: Service[] = [
     features: [
       "Detailed reports to meet council and trade waste obligations",
       "Compliance checks and documentation",
+      "Maintaining operations in line with local council regulations and meeting all relevant Queensland environmental compliance standards.",
       "24-hour turnaround on all compliance reports",
       "Records formatted for Queensland Health and BCC audits",
     ],

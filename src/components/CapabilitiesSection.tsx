@@ -24,7 +24,6 @@ const panels: Record<string, PanelCard[]> = {
       Icon: SprayCan,
       title: "Servicing",
       items: [
-        "Scheduled grease trap cleaning and pump-outs",
         "Emergency call-outs for urgent blockages or overflows",
         "High-pressure water cleaning",
         "Waste removal and environmentally compliant disposal",

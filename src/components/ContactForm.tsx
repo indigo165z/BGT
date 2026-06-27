@@ -148,7 +148,7 @@ export default function ContactForm() {
         {isSubmitting ? (
           <><Loader2 className="w-4 h-4 animate-spin" /> Sending…</>
         ) : (
-          "Send enquiry — 0459 410 785"
+          "Send enquiry"
         )}
       </button>
     </form>

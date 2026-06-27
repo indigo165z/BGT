@@ -15,13 +15,14 @@ export default function Footer() {
 
       {/* Nav links */}
       <div className="flex justify-center gap-7 flex-wrap mb-5">
-        <Link href="/#about" className="hover:text-[#7ab890] transition-colors">About</Link>
-        <Link href="/#capabilities" className="hover:text-[#7ab890] transition-colors">Services</Link>
-        <Link href="/#industries" className="hover:text-[#7ab890] transition-colors">Industries</Link>
+        <Link href="/about" className="hover:text-[#7ab890] transition-colors">About</Link>
+        <Link href="/services" className="hover:text-[#7ab890] transition-colors">Services</Link>
+        <Link href="/industries" className="hover:text-[#7ab890] transition-colors">Industries</Link>
         <Link href="/contact" className="hover:text-[#7ab890] transition-colors">Contact</Link>
       </div>
 
       <p>Contact: {COMPANY.contactName} &nbsp;|&nbsp; <a href={`tel:${COMPANY.phone}`} className="hover:text-[#7ab890] transition-colors">{COMPANY.phone}</a> &nbsp;|&nbsp; Southeast Queensland, Australia</p>
+      <p className="mt-2">License 15063700 &nbsp;|&nbsp; ABN 557978091567</p>
       <p className="mt-2">&copy; {new Date().getFullYear()} Brisbane Grease Traps. All rights reserved. Licensed &amp; insured.</p>
     </footer>
   );

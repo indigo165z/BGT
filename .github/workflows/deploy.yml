@@ -25,14 +25,14 @@ jobs:
       - name: Build static export
         run: npm run build
 
-      - name: Deploy to Hostinger via SFTP
+      - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 145.79.28.180
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          protocol: sftp
+          port: 21
+          protocol: ftp
           local-dir: ./out/
           server-dir: /home/u543019830/domains/brisbanegreasetraps.com.au/public_html/
           dangerous-clean-slate: false

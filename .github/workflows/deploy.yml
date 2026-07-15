@@ -34,5 +34,5 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./out/
-          server-dir: /home/u543019830/domains/brisbanegreasetraps.com.au/public_html/
+          server-dir: /public_html/
           dangerous-clean-slate: false
